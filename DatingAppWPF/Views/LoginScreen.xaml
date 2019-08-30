@@ -1,0 +1,64 @@
+﻿<Window x:Class="DatingAppWPF.Views.LoginScreen"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DatingAppWPF.Views"
+        mc:Ignorable="d"
+        Title="Login" Height="445" Width="400" WindowStartupLocation="CenterScreen">
+    <StackPanel Background="LightPink" Margin="10 10 10 10">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.2*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="0.2*" />
+            </Grid.ColumnDefinitions>
+
+            <TextBlock FontWeight="UltraBold" Margin="0 20 0 0" FontSize="18" Text="Welcome To" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Column="1"></TextBlock>
+        </Grid>
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.2*"/>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="0.2*" />
+            </Grid.ColumnDefinitions>
+            <TextBlock FontWeight="Bold" Margin="0 0 0 20" FontSize="18" Text="Religious Dating" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Column="1"></TextBlock>
+        </Grid>
+
+        <Line  
+                HorizontalAlignment="Center"
+                X1="300" Y1="0"   
+                Stroke="HotPink"  
+                StrokeThickness="6" />
+
+        <Border BorderBrush="DeepPink" BorderThickness="2" Width="240" Height="240" Margin="32">
+            <Grid>
+                <TextBlock FontWeight="Light" Text="Sign In" Margin="25 13 10 10"></TextBlock>
+
+                <Line  
+                HorizontalAlignment="Center"
+                X1="300" Y1="0"   
+                Stroke="HotPink"  
+                StrokeThickness="6"
+                    Margin="20 35 20 10"/>
+
+                <TextBlock Text="Username" Margin="25 55"></TextBlock>
+
+                <TextBox x:Name="userNameTextBox" Margin="24 75 24 140" Padding="2"></TextBox>
+
+                <TextBlock Text="Password" Margin="25 108"></TextBlock>
+
+                <Button x:Name="signUpButton" Margin="38 185 140 30" Click="signUpButton_Click">Sign Up</Button>
+
+                <Button x:Name="signInButton" Margin="140 185 38 30" Click="signInButton_Click">Sign In</Button>
+
+                <PasswordBox x:Name="passwTextBox" Margin="24 130 24 85" Padding="2"></PasswordBox>
+            </Grid>
+        </Border>
+
+
+
+    </StackPanel>
+
+</Window>
